@@ -15,35 +15,42 @@ bash <(curl -sL https://raw.githubusercontent.com/akhilnarang/scripts/refs/heads
 Start Syncing
 ---------------
 To start syncing, create a directory and move in that directoery with the command below.
-```
+```bash
 mkdir aospb && cd aospb
 ```
 
 To initialize your local repository using the aospb trees, use a command like this:
-```
+```bash
 repo init -u https://github.com/aospb-project/manifest.git -b 15.1 --git-lfs
 ```
-Then to sync up:
+Alternatively in case you have limited network/disk space resources:
+```bash
+repo init -u https://github.com/aospb-project/manifest.git -b 15.1 --git-lfs --depth=1
 ```
-repo sync
+Then to sync up:
+```bash
+# The -j# option specifies the number of concurrent download threads to run.
+# Default sync thread count is set as 8
+# In case of sync errors, you may need to adjust this value as per you need
+
+repo sync --force-sync --no-clone-bundle --no-tags
 ```
 Start Building
 ---------------
 To start the building process, setup the environment by executing the below command.
-```
+```bash
 source build/envsetup.sh
 ```
 Use the below command to perform lunch action, replace *$device_codename* as required for your device. 
 
-```
+```bash
 breakfast $device_codename
 ```
-
 To start the build:
-```
+```bash
 brunch $device_codename
 ```
-**Note**: By default `user` build is set and default core count is `8`
+**Note**: By default build type is `user`
 
 ### Credits
 --------------
