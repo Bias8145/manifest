@@ -13,6 +13,10 @@
   <!-- Frameworks Repos -->
   <project path="frameworks/native" name="c0smic-Lab/frameworks_native" revision="15" remote="github" />
 
+  <!-- Hardware -->
+  <project path="hardware/google/gchips" name="ProjectPixelage/android_hardware_google_gchips" revision="15" groups="pdk-lassen,pdk-gs-arm" remote="github" />
+  <project path="hardware/google/graphics/common" name="ProjectPixelage/android_hardware_google_graphics_common" revision="15" groups="pdk-lassen,pdk-gs-arm" remote="github" />
+
   <!-- Packages Repos -->
   <project path="packages/apps/ParanoidSense" name="ProjectPixelage/android_packages_apps_ParanoidSense" revision="15" remote="github" />
   <project path="packages/modules/Bluetooth" name="ProjectPixelage/android_packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="15" remote="github" />
