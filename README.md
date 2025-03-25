@@ -29,7 +29,7 @@ repo init -u https://github.com/Bias8145/manifest.git -b 15.1 --git-lfs --depth=
 ```
 Then to sync up:
 ```bash
-repo sync --force-sync --no-clone-bundle --no-tags -j$(nprop --all)
+repo sync --force-sync --no-clone-bundle --no-tags -j$(nproc --all)
 ```
 Start Building
 ---------------
