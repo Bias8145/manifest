@@ -8,25 +8,26 @@
           fetch="https://gitea.com/" />
 
   <!-- General Repos -->
-  <project path="build/release" name="ProjectPixelage/android_build_release" groups="pdk,tradefed" revision="15" remote="github" />
+  <project path="build/release" name="The-Pixel-Project/build_release" groups="pdk,tradefed" revision="15.1" remote="github" />
+
 
   <!-- Frameworks Repos -->
-  <project path="frameworks/native" name="c0smic-Lab/frameworks_native" revision="15" remote="github" />
+  <project path="frameworks/native" name="The-Pixel-Project/frameworks_native" revision="15.1" remote="github" />
 
   <!-- Hardware -->
-  <project path="hardware/google/gchips" name="ProjectPixelage/android_hardware_google_gchips" revision="15" groups="pdk-lassen,pdk-gs-arm" remote="github" />
-  <project path="hardware/google/graphics/common" name="ProjectPixelage/android_hardware_google_graphics_common" revision="15" groups="pdk-lassen,pdk-gs-arm" remote="github" />
+  <project path="hardware/google/gchips" name="The-Pixel-Project/android_hardware_google_gchips" revision="15.1" groups="pdk-lassen,pdk-gs-arm" remote="github" />
+  <project path="hardware/google/graphics/common" name="The-Pixel-Project/android_hardware_google_graphics_common" revision="15.1" groups="pdk-lassen,pdk-gs-arm" remote="github" />
 
   <!-- Packages Repos -->
-  <project path="packages/apps/ParanoidSense" name="ProjectPixelage/android_packages_apps_ParanoidSense" revision="15" remote="github" />
-  <project path="packages/modules/Bluetooth" name="ProjectPixelage/android_packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="15" remote="github" />
-  <project path="packages/modules/Connectivity" name="c0smic-Lab/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="15" remote="github" />
+  <project path="packages/apps/ParanoidSense" name="The-Pixel-Project/android_packages_apps_ParanoidSense" revision="15.1" remote="github" />
+  <project path="packages/modules/Bluetooth" name="The-Pixel-Project/packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" revision="15.1" remote="github" />
+  <project path="packages/modules/Connectivity" name="The-Pixel-Project/packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" revision="15.1" remote="github" />
 
   <!-- Vendor Repos -->
-  <project path="vendor/gms" name="clarencelol/android_vendor_gms" remote="gitea" revision="15" clone-depth="1" />
-  <project path="vendor/google/overlays/ThemeIcons" name="PixelOS-AOSP/vendor_google_overlays_ThemeIcons" revision="fifteen" remote="github" />
+  <project path="vendor/gms" name="MODEDGES2029/android_vendor_gms" remote="gitea" revision="15.1" clone-depth="1" />
+  <project path="vendor/google/overlays/ThemeIcons" name="The-Pixel-Project/vendor_google_overlays_ThemeIcons" revision="15.1" remote="github" />
 
   <!-- System Repos -->
-  <project path="system/security" name="c0smic-Lab/system_security" revision="15" remote="github" />
-
+  <project path="system/security" name="The-Pixel-Project/system_security" revision="15.1" remote="github" />
+  
 </manifest>
