@@ -21,19 +21,15 @@ mkdir aospb && cd aospb
 
 To initialize your local repository using the aospb trees, use a command like this:
 ```bash
-repo init -u https://github.com/aospb-project/manifest.git -b 15.1 --git-lfs
+repo init -u https://github.com/Bias8145/manifest.git -b 15.1 --git-lfs
 ```
 Alternatively in case you have limited network/disk space resources:
 ```bash
-repo init -u https://github.com/aospb-project/manifest.git -b 15.1 --git-lfs --depth=1
+repo init -u https://github.com/Bias8145/manifest.git -b 15.1 --git-lfs --depth=1
 ```
 Then to sync up:
 ```bash
-# The -j# option specifies the number of concurrent download threads to run.
-# Default sync thread count is set as 8
-# In case of sync errors, you may need to adjust this value as per you need
-
-repo sync --force-sync --no-clone-bundle --no-tags
+repo sync --force-sync --no-clone-bundle --no-tags -j$(nprop --all)
 ```
 Start Building
 ---------------
