@@ -5,8 +5,8 @@
           fetch="https://github.com/aospb-project"
           revision="15.1"  />
 
-  <remote name="Bias8145"
-          fetch="https://github.com/Bias8145"
+  <remote name="bias8145"
+          fetch="https://github.com/bias8145"
           revision="aospb-Q1"  />
 
   <!-- General Repos -->
@@ -44,7 +44,7 @@
   <!-- Vendor Repos -->
   <project path="vendor/aosp" name="vendor_aosp" remote="aospb" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="aospb" />
-  <project path="vendor/products" name="vendor_products" remote="Bias8145" />
+  <project path="vendor/products" name="vendor_products" remote="bias8145" />
 
   <!-- System Repos -->
   <project path="system/core" name="system_core" remote="aospb" />
