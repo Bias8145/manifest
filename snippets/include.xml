@@ -7,7 +7,7 @@
 
   <remote name="bias8145"
           fetch="https://github.com/bias8145"
-          revision="aospb-Q1"  />
+          revision="15.1"  />
 
   <!-- General Repos -->
   <project path="art" name="art" remote="aospb" />
