@@ -37,14 +37,30 @@ To start the building process, setup the environment by executing the below comm
 ```bash
 source build/envsetup.sh
 ```
-Use the below command to perform lunch action, replace *$device_codename* as required for your device. 
+Signing the builds
+```bash
+bash <(curl -s https://raw.githubusercontent.com/Bias8145/Signing-keys/main/keygen.sh)
+```
+Use the below command to perform lunch action.
 
 ```bash
-breakfast $device_codename
+breakfast sunfish
+```
+```bash
+breakfast coral
+```
+```bash
+breakfast flame
 ```
 To start the build:
 ```bash
-brunch $device_codename
+brunch sunfish
+```
+```bash
+brunch coral
+```
+```bash
+brunch flame
 ```
 **Note**: By default build type is `user`
 
