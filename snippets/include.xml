@@ -9,6 +9,10 @@
           fetch="https://github.com/bias8145"
           revision="15.1"  />
 
+    <remote name="tpp"
+          fetch="https://github.com/The-Pixel-Project"
+          revision="15.1"  />
+  
   <!-- General Repos -->
   <project path="art" name="art" remote="aospb" />
   <project path="bootable/recovery" name="bootable_recovery" remote="aospb" />
@@ -35,7 +39,7 @@
 
   <!-- Frameworks Repos -->
   <project path="frameworks/base" name="frameworks_base" remote="aospb" />
-  <project path="frameworks/av" name="frameworks_av" remote="aospb" />
+  <project path="frameworks/av" name="frameworks_av" remote="tpp" />
 
   <!-- Packages Repos -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="aospb" />
